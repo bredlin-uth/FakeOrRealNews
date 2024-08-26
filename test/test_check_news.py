@@ -39,4 +39,3 @@ class TestNews:
             print("Sources:", value)
             Common_Utils.write_data_into_excel(file, sheet_name, last_row + 1, 4, value)
 
-
