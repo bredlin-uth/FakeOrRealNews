@@ -69,3 +69,15 @@ def split_string(input_string):
     # Strip leading and trailing spaces from each part
     parts = [part.strip() for part in parts]
     return parts
+
+def split_string1(input_string):
+    # Use regular expression to split the string at the apostrophe
+    parts = re.split(r"[\\]", input_string)
+    # Strip leading and trailing spaces from each part
+    parts = [part.strip() for part in parts]
+    return parts
+
+
+file = os.path.join(os.path.dirname(os.path.abspath('.')), "test_data\\sample_file\\pdf-sample.pdf")
+print(file)
+print(split_string1(file))
